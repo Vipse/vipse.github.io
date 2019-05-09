@@ -23,8 +23,9 @@ $(document).ready(function(){
       top: "0%",
       opacity: 1,
     }, {duration: 700, queue: false});
+    $('.advantage-description-content').css({opacity: 0, top: '50%'})
     setTimeout(()=>{
-      $('.advantage-description-content').css({opacity: 0, top: '50%'}).animate({
+      $('.advantage-description-content').animate({
         top: "0%",
         opacity: 1,
       }, {duration: 700, queue: false});
