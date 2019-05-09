@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="111" viewBox="0 0 160 111">
+    <defs>
+        <style>
+            .cls-1{fill:#014f8e}.cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="logo" transform="translate(2750 -7745)">
+        <path id="Rectangle_10" d="M0 0h160v111H0z" class="cls-1" data-name="Rectangle 10" transform="translate(-2750 7745)"/>
+        <g id="Spare_Icon" data-name="Spare Icon" transform="translate(-4104 4555)">
+            <path id="Path_1007" d="M27.558 5.365a176.827 176.827 0 0 1 6 22c6.8 9.752 12.676 21.285 14 32-3.672-.3-9.522 1.134-15 3-1.023 5.418-2 9-2 9s22.549-10.783 32-10c-3.19-25.945-35-56-35-56z" class="cls-2" data-name="Path 1007" transform="translate(1397.442 3208.635)"/>
+            <path id="Path_1008" d="M34.453 56.335c-1.324-10.655-7.258-22.248-14-32a192.273 192.273 0 0 0-20-24s7.181 24.924 7 36a106.807 106.807 0 0 1-5 30s9.271-4.05 18-7c5.478-1.926 10.328-3.241 14-3z" class="cls-2" data-name="Path 1008" transform="translate(1408.547 3210.665)"/>
+        </g>
+    </g>
+</svg>

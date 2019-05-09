@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56.5" height="56.5" viewBox="0 0 56.5 56.5">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:none;stroke:#014f8e}.cls-1{stroke-width:2.5px}.cls-2{stroke-linecap:round;stroke-width:2.4px;fill-rule:evenodd}
+        </style>
+    </defs>
+    <g id="icon_check" transform="translate(1.029 -.971)">
+        <circle id="Circle-48px" cx="27" cy="27" r="27" class="cls-1" transform="translate(.221 2.221)"/>
+        <path id="ic_checkmark_validation" d="M36.68 19.59l-14 14-7-7" class="cls-2" transform="translate(1.542 3.63)"/>
+    </g>
+</svg>

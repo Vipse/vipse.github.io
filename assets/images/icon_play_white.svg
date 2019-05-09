@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}.cls-2{fill:#0f84e2}
+        </style>
+    </defs>
+    <g id="icon_play_white" transform="translate(-354.464 -3917.464)">
+        <circle id="Ellipse_5" cx="12" cy="12" r="12" class="cls-1" data-name="Ellipse 5" transform="translate(354.464 3917.464)"/>
+        <path id="Path_54" d="M4044.183 3513.375v10l8-4.967z" class="cls-2" data-name="Path 54" transform="translate(-3680.72 411.089)"/>
+    </g>
+</svg>
