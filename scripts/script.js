@@ -11,20 +11,24 @@ $(document).ready(function(){
 
     $('.advantages-item').removeClass('active');
 
+    const advantageId = e.target.getAttribute('data-advantage-id');
+
+    const newAdvantage = advantagesList[advantageId];
 
     if(e.target.classList.contains('advantages-item')) {
       e.target.classList.add('active');
     } else {
-      e.target.parentNode.classList.add('active');
+      e.target.parentElement.parentElement.classList.add('active');
+      e.target.parentElement.classList.add('active');
     }
 
 
-    $('.advantage-description-title').css({opacity: 0, top: '50%'}).animate({
+    $('.advantage-description-title').css({opacity: 0, top: '50%'}).html(newAdvantage.title).animate({
       top: "0%",
       opacity: 1,
     }, {duration: 700, queue: false});
 
-    $('.advantage-description-content').css({opacity: 0, top: '50%'}).animate({
+    $('.advantage-description-content').css({opacity: 0, top: '50%'}).html(newAdvantage.description).animate({
       top: "0%",
       opacity: 1,
     }, {duration: 850, queue: false});
@@ -80,4 +84,11 @@ $(document).ready(function(){
       $('.header-top').removeClass('scrolled');
     }
   })
+  $(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+  });
 });

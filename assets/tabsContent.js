@@ -251,5 +251,86 @@ const tabsContent = [
 
     ]
   },
-  {},
 ];
+
+const advantagesList = [
+  {
+    id:0,
+    title: 'Top-Steuerexperten im In- und Ausland',
+    description: 'Sie brauchen aufgrund Ihrer hohen Steuerbelastung eine qualifizierte Zweitmeinung zu Ihrem' +
+      'Steuerberater oder Rechtsanwalt?' +
+      '<br/>' +
+      '<br/>' +
+      'Dann freuen wir uns auf die Zusammenarbeit.' +
+      '<br/>' +
+      '<br/>' +
+      'Denn wir haben in 9 Jahren unternehmerischer Praxis ein Experten-Netzwerk geschaffen, in dem wir' +
+      'die weltweit führenden Steuerberater, Anwälte, Firmengründungsexperten und erfahrensten Berater für' +
+      'Genossenschaften, Stiftungen und Wirtschaftsvereine zusammengebracht haben, um Sie mit unserer' +
+      'ganzheitlichen Wirtschafts- und Unternehmensberatung auf dem Weg zu Ihrer maximalen' +
+      'wirtschaftlichen Freiheit begleiten zu können.',
+  },
+  {
+    id:1,
+    title: 'Für Deutsche, Österreicher und Schweizer ',
+    description: 'Sie brauchen aufgrund Ihrer hohen Steuerbelastung eine qualifizierte Zweitmeinung zu Ihrem ' +
+      'Steuerberater oder Rechtsanwalt?' +
+      '<br/><br/>' +
+      'Dann freuen wir uns auf die Zusammenarbeit. ',
+  },
+  {
+    id:2,
+    title: 'Praxis statt Theorie ',
+    description: 'Dann freuen wir uns auf die Zusammenarbeit.' +
+      '<br/><br/>' +
+      'Denn wir haben in 9 Jahren unternehmerischer Praxis ein Experten-Netzwerk geschaffen, in dem wir die weltweit ' +
+      'führenden Steuerberater, Anwälte, Firmengründungsexperten und erfahrensten Berater für Genossenschaften, ' +
+      'Stiftungen und Wirtschaftsvereine zusammengebracht haben, um Sie mit unserer ganzheitlichen Wirtschafts- ' +
+      'und Unternehmensberatung auf dem Weg zu Ihrer maximalen wirtschaftlichen Freiheit begleiten zu können. ',
+  },
+  {
+    id:3,
+    title: 'Schutz und Vermehrung Ihres Vermögens ',
+    description: 'Sie brauchen aufgrund Ihrer hohen Steuerbelastung eine qualifizierte Zweitmeinung zu Ihrem ' +
+      'Steuerberater oder Rechtsanwalt?' +
+      '<br/><br/>' +
+      'Denn wir haben in 9 Jahren unternehmerischer Praxis ein Experten-Netzwerk geschaffen, in dem wir die weltweit ' +
+      'führenden Steuerberater, Anwälte, Firmengründungsexperten und erfahrensten Berater für Genossenschaften, ' +
+      'Stiftungen und Wirtschaftsvereine zusammengebracht haben, um Sie mit unserer ganzheitlichen Wirtschafts- und ' +
+      'Unternehmensberatung auf dem Weg zu Ihrer maximalen wirtschaftlichen Freiheit begleiten zu können. ',
+  },
+  {
+    id:4,
+    title: 'Spare Steuern Akademie ',
+    description: 'Denn wir haben in 9 Jahren unternehmerischer Praxis ein Experten-Netzwerk geschaffen, in dem wir ' +
+      'die weltweit führenden Steuerberater, Anwälte, Firmengründungsexperten und erfahrensten Berater für ' +
+      'Genossenschaften, Stiftungen und Wirtschaftsvereine zusammengebracht haben, um Sie mit unserer ganzheitlichen ' +
+      'Wirtschafts- und Unternehmensberatung auf dem Weg zu Ihrer maximalen wirtschaftlichen Freiheit begleiten ' +
+      'zu können. ',
+  },
+  {
+    id:5,
+    title: 'Kostenfreie Erstberatung ',
+    description: 'Sie brauchen aufgrund Ihrer hohen Steuerbelastung eine qualifizierte Zweitmeinung zu Ihrem ' +
+      'Steuerberater oder Rechtsanwalt?' +
+      ' <br/><br/>' +
+      'Dann freuen wir uns auf die Zusammenarbeit.' +
+      '<br/><br/>' +
+      'Denn wir haben in 9 Jahren unternehmerischer Praxis ein Experten-Netzwerk geschaffen, in dem wir die weltweit ' +
+      'führenden Steuerberater, Anwälte, Firmengründungsexperten und erfahrensten Berater für Genossenschaften, ' +
+      'Stiftungen und Wirtschaftsvereine zusammengebracht haben, um Sie mit unserer ganzheitlichen Wirtschafts- ' +
+      'und Unternehmensberatung auf dem Weg zu Ihrer maximalen wirtschaftlichen Freiheit begleiten zu können. ',
+  },
+
+];
+
+
+
+
+
+
+
+
+
+
+

@@ -96,12 +96,13 @@ button {
   top: 0;
   z-index: 5;
   width: 100%;
-  padding: 32px 140px;
+  padding: 64px 46px 64px 64px;
   background-color: transparent;
-  transition: background-color 0.6s ease;
+  transition: 0.6s ease;
 }
 .header-top.scrolled {
   background-color: #014f8e;
+  padding: 32px 46px 32px 64px;
 }
 .header-top .logo {
   width: 320px;
@@ -111,17 +112,18 @@ button {
 }
 .header-top .menu ul {
   display: flex;
+  margin: 0;
 }
 .header-top .menu ul li {
   list-style: none;
-  margin-right: 44px;
+  margin-right: 80px;
 }
 .header-top .menu ul li a {
   color: white;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 31px;
+  line-height: 25px;
   padding: 4px 0;
 }
 .header-top .menu ul li a.active:after,
@@ -145,36 +147,40 @@ button {
   display: flex;
   align-items: center;
 }
-.header-top .contacts button.consult {
-  padding: 13px 25px;
-  color: white;
-  font-size: 23px;
-  line-height: 29px;
-  font-weight: 600;
-  background: none;
-  border: 1px solid white;
+.header-top .contacts button.call {
+  background: url("../assets/images/icon_call.svg") 180px 50% no-repeat;
+  background-size: 25px 25px;
+  margin-right: 22px;
+  padding: 12px 60px 12px 16px;
   border-radius: 5px;
-  margin-right: 36px;
+  border: solid 1px #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #FFF;
   position: relative;
   top: 0;
   transition: top 0.3s ease;
 }
-.header-top .contacts button.consult:hover {
+.header-top .contacts button.call:hover {
   top: -2px;
 }
-.header-top .contacts button.call,
 .header-top .contacts button.profile {
-  width: 36px;
-  height: 36px;
+  background: url("../assets/images/icon_user.svg") 130px 50% no-repeat;
+  background-size: 25px 25px;
+  padding: 12px 60px 12px 16px;
+  border-radius: 5px;
+  border: solid 1px #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #FFF;
+  position: relative;
+  top: 0;
+  transition: top 0.3s ease;
 }
-.header-top .contacts button.call {
-  background: url("../assets/images/icon_call.svg") 50% 50% no-repeat;
-  background-size: contain;
-  margin-right: 22px;
-}
-.header-top .contacts button.profile {
-  background: url("../assets/images/icon_user.svg") 50% 50% no-repeat;
-  background-size: contain;
+.header-top .contacts button.profile:hover {
+  top: -2px;
 }
 .main {
   height: 924px;
@@ -196,7 +202,6 @@ button {
   right: 0;
   left: 0;
   height: 924px;
-  background-color: rgba(1, 79, 142, 0.6);
   overflow: hidden;
 }
 .main .video-overlay img {
@@ -206,7 +211,7 @@ button {
   left: -5%;
 }
 .main .header-content {
-  padding: 64px 140px 140px 140px;
+  padding: 0 140px 140px 140px;
   max-width: 1920px;
   margin: 0 auto;
   width: 100%;
@@ -221,12 +226,15 @@ button {
   line-height: 80px;
   font-weight: 900;
   letter-spacing: -1.1px;
-  margin-top: 180px;
+  margin-top: 316px;
+  margin-bottom: 40px;
 }
 .main .header-content .video-action h4 {
   letter-spacing: -0.5px;
   font-size: 35px;
   font-weight: 400;
+  line-height: 40px;
+  margin: 0 0 54px;
 }
 .main .header-content .video-action button.play-video {
   border-radius: 5px;
@@ -234,16 +242,34 @@ button {
   border: none;
   padding: 16px 81px 16px 92px;
   background: #037ce3 url("../assets/images/icon_triangle.svg") 40px 50% no-repeat;
-  font-size: 26px;
-  line-height: 33px;
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 600;
   color: white;
   position: relative;
+  margin-right: 20px;
   top: 0;
   transition: 0.3s ease;
 }
 .main .header-content .video-action button.play-video:hover {
   top: -2px;
   background: #034993 url("../assets/images/icon_triangle.svg") 40px 50% no-repeat;
+}
+.main .header-content .video-action button.consult {
+  background: transparent;
+  padding: 17px 50px;
+  border-radius: 5px;
+  border: solid 1px #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 31px;
+  color: #FFF;
+  position: relative;
+  top: 0;
+  transition: top 0.3s ease;
+}
+.main .header-content .video-action button.consult:hover {
+  top: -2px;
 }
 .main .header-content .trustpilot {
   display: flex;
@@ -325,6 +351,8 @@ button {
   font-weight: bold;
   position: relative;
   line-height: 65px;
+  margin-bottom: 15px;
+  display: inline-block;
   top: 0;
   color: #014f8e;
 }
@@ -882,6 +910,7 @@ button {
   line-height: 70px;
   color: #014f8e;
   margin-bottom: 10px;
+  text-align: center;
 }
 .contacts-block .secondary-title {
   margin-bottom: 120px;
@@ -889,6 +918,7 @@ button {
   line-height: 38px;
   letter-spacing: -0.5px;
   color: #4b4b4b;
+  text-align: center;
 }
 .contacts-block .contact-items {
   display: flex;
@@ -1067,36 +1097,42 @@ button {
     max-width: 1024px;
   }
   .header-top {
-    padding: 16px 34px;
+    padding: 34px 32px 34px 34px;
   }
   .header-top .logo {
     width: 170px;
   }
   .header-top .menu ul li {
-    margin-right: 30px;
+    margin-right: 47px;
   }
   .header-top .menu ul li a {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 12px;
+    line-height: 15px;
     padding: 3px 0;
   }
   .header-top .menu ul li a:after {
     top: 3px;
     height: 1px;
   }
-  .header-top .contacts button.consult {
-    padding: 6px 14px;
-    font-size: 14px;
-    line-height: 18px;
-    margin-right: 34px;
-  }
-  .header-top .contacts button.call,
-  .header-top .contacts button.profile {
-    width: 20px;
-    height: 20px;
-  }
   .header-top .contacts button.call {
-    margin-right: 12px;
+    background-position-x: 112px;
+    background-size: 16px 16px;
+    margin-right: 16px;
+    padding: 8px 38px 8px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+  }
+  .header-top .contacts button.profile {
+    background-position-x: 82px;
+    background-size: 16px 16px;
+    padding: 8px 38px 8px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+  }
+  .header-top.scrolled {
+    padding: 16px 32px 16px 34px;
   }
   .main {
     height: 492px;
@@ -1108,27 +1144,39 @@ button {
     height: 492px;
   }
   .main .header-content {
-    padding: 34px 34px 70px 34px;
+    padding: 0 74px 70px 75px;
     max-width: 1024px;
   }
   .main .header-content .video-action h1 {
     font-size: 40px;
     line-height: 42px;
     letter-spacing: -0.6px;
-    margin-top: 96px;
+    margin-top: 174px;
+    margin-bottom: 0;
   }
   .main .header-content .video-action h4 {
     letter-spacing: -0.3px;
     font-size: 18px;
+    margin-bottom: 34px;
   }
   .main .header-content .video-action button.play-video {
-    padding: 9px 47px 9px 49px;
-    background: #037ce3 url("../assets/images/icon_triangle.svg") 20px 50% no-repeat;
-    font-size: 13px;
-    line-height: 17px;
+    padding: 9px 36px 9px 52px;
+    background: #037ce3 url("../assets/images/icon_triangle.svg") 23px 50% no-repeat;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    margin-right: 16px;
+    background-size: 9px 12px;
   }
   .main .header-content .video-action button.play-video:hover {
-    background-position: 20px;
+    background-size: 9px 12px;
+    background-position: 23px 50%;
+  }
+  .main .header-content .video-action button.consult {
+    padding: 9px 23px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
   }
   .main .header-content .trustpilot img {
     width: 100px;
@@ -1660,12 +1708,22 @@ button {
   .header-top .menu {
     display: none;
   }
-  .header-top .contacts button.consult {
-    margin-right: 12px;
+  .header-top .contacts button.call {
+    background-position-x: 112px;
+    background-size: 16px 16px;
+    margin-right: 16px;
+    padding: 8px 38px 8px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
   }
-  .header-top .contacts button.call,
   .header-top .contacts button.profile {
-    display: none;
+    background-position-x: 82px;
+    background-size: 16px 16px;
+    padding: 8px 38px 8px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
   }
   .main .header-content {
     padding: 0 74px 71px 75px;
@@ -1862,6 +1920,14 @@ button {
     height: 30px;
   }
 }
+@media screen and (max-width: 873px) {
+  .main .video-wrap video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 100%;
+  }
+}
 @media screen and (max-width: 767px) {
   .container {
     max-width: 667px;
@@ -1871,6 +1937,10 @@ button {
   }
   .main .video-wrap {
     height: 321px;
+  }
+  .main .video-wrap video {
+    width: 100%;
+    height: auto;
   }
   .main .video-overlay {
     height: 321px;
@@ -1891,14 +1961,6 @@ button {
     font-size: 11px;
     line-height: 26px;
     margin: 0 0 23px 0;
-  }
-  .main .header-content .video-action button.play-video {
-    border-radius: 3px;
-    padding: 7px 14px 7px 31px;
-    background-size: 6px 8px;
-    background-position: 13px 50%;
-    font-size: 14px;
-    line-height: 18px;
   }
   .main .header-content .trustpilot img {
     width: 64px;
@@ -2370,5 +2432,649 @@ button {
   .footer .container .footer-menu ul li a {
     font-size: 12px;
     line-height: 15px;
+  }
+}
+@media screen and (max-width: 666px) {
+  .container {
+    max-width: 375px;
+  }
+  .header-top {
+    padding: 16px 20px;
+  }
+  .header-top .logo {
+    width: 111px;
+  }
+  .header-top .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-top .contacts button.call,
+  .header-top .contacts button.profile {
+    background-position-x: 111px;
+    background-size: 16px 16px;
+    margin-right: 0;
+    padding: 6px 0 6px 12px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    width: 140px;
+  }
+  .header-top .contacts button.call {
+    order: 2;
+  }
+  .header-top .contacts button.profile {
+    padding: 6px 0 6px 30px;
+    margin-bottom: 15px;
+  }
+  .header-top.scrolled {
+    padding: 16px 32px 16px 34px;
+  }
+  .main {
+    height: 391px;
+  }
+  .main .video-wrap {
+    height: 391px;
+  }
+  .main .video-wrap video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 100%;
+  }
+  .main .video-overlay {
+    height: 391px;
+  }
+  .main .header-content {
+    padding: 0 20px 35px 43px;
+    max-width: 375px;
+  }
+  .main .header-content .video-action h1 {
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: -0.4px;
+    margin-top: 143px;
+    margin-bottom: 6px;
+  }
+  .main .header-content .video-action h4 {
+    letter-spacing: -0.2px;
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 22px;
+  }
+  .main .header-content .video-action button.play-video {
+    padding: 10px 15px 10px 33px;
+    background: #037ce3 url("../assets/images/icon_triangle.svg") 10px 50% no-repeat;
+    background-size: 9px 12px;
+    font-size: 13px;
+    line-height: 17px;
+    margin-right: 10px;
+  }
+  .main .header-content .video-action button.play-video:hover {
+    background: #034993 url("../assets/images/icon_triangle.svg") 10px 50% no-repeat;
+    background-size: 9px 12px;
+  }
+  .main .header-content .video-action button.consult {
+    padding: 9px 5px;
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .main .header-content .trustpilot {
+    margin-top: 43px;
+  }
+  .main .header-content .trustpilot img {
+    width: 64px;
+    height: 30px;
+  }
+  .advantages-title {
+    background: #FFFFFF;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -0.2px;
+    margin: 24px 0 40px 0;
+  }
+  .advantages-container {
+    padding: 0;
+  }
+  .advantages {
+    padding: 0 20px 40px 20px;
+    box-shadow: none;
+  }
+  .advantages .advantages-list {
+    width: 54px;
+    min-width: 54px;
+    margin-right: 20px;
+  }
+  .advantages .advantages-list .advantages-item {
+    height: 54px;
+    border-radius: 4px;
+    padding: 11px;
+    margin-bottom: 8px;
+    border: solid 1px rgba(119, 207, 240, 0.2);
+  }
+  .advantages .advantages-list .advantages-item.active {
+    border: solid 1px #014f8e;
+  }
+  .advantages .advantages-list .advantages-item:hover:not(.active) {
+    border: solid 1px #05a3ed;
+  }
+  .advantages .advantages-list .advantages-item .advantages-item-icon {
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    min-height: 32px;
+    margin-right: 0px;
+  }
+  .advantages .advantages-list .advantages-item .advantages-item-title {
+    display: none;
+  }
+  .advantages .advantage-description .advantage-description-title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .advantages .advantage-description .advantage-description-content {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .quotes {
+    max-width: 375px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .quotes .photo-dirk {
+    width: 100%;
+  }
+  .quotes .quotes-slider {
+    width: 100%;
+  }
+  .quotes .quotes-slider .owl-carousel {
+    padding-bottom: 40px;
+  }
+  .quotes .quotes-slider .owl-carousel .owl-stage-outer {
+    height: calc(100% - 40px);
+  }
+  .quotes .quotes-slider .owl-carousel .owl-item {
+    padding: 40px 46px 0 46px;
+  }
+  .quotes .quotes-slider .owl-carousel .owl-item .quote-item .quote-icon {
+    width: 12px;
+    height: 10px;
+  }
+  .quotes .quotes-slider .owl-carousel .owl-item .quote-item .quote-text {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 13px 0 6px 0;
+  }
+  .quotes .quotes-slider .owl-carousel .owl-item .quote-item .quote-footer .author .name-info {
+    border-bottom: 1px solid #084271;
+    padding: 0;
+    margin-bottom: 4px;
+  }
+  .quotes .quotes-slider .owl-carousel .owl-item .quote-item .quote-footer .author .name-info .name {
+    font-size: 14px;
+    line-height: 18px;
+    margin-right: 10px;
+  }
+  .quotes .quotes-slider .owl-carousel .owl-item .quote-item .quote-footer .author .name-info .info-icon {
+    width: 12px;
+    min-width: 12px;
+    height: 12px;
+    min-height: 12px;
+  }
+  .quotes .quotes-slider .owl-carousel .owl-item .quote-item .quote-footer .author .country {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .quotes .quotes-slider .owl-carousel .owl-item .quote-item .quote-footer .author .position {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .quotes .quotes-slider .owl-carousel .owl-item .quote-item .quote-footer .trustpilot img {
+    width: 68px;
+    height: 30px;
+  }
+  .quotes .quotes-slider .owl-carousel .owl-dots {
+    margin: 25px 0 0 0;
+    text-align: center;
+  }
+  .quotes .quotes-slider .owl-carousel .owl-dots button.owl-dot {
+    width: 7px;
+    height: 7px;
+    margin: 0 8px;
+    border: 2px solid white;
+  }
+  .quotes .quotes-slider .owl-carousel .owl-dots button.owl-dot.active {
+    border: 2px solid #03a9ef;
+  }
+  .slogans .slogan-1,
+  .slogans .slogan-2,
+  .slogans .slogan-3 {
+    padding: 25px 27px 40px 27px;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .slogans .slogan-1 .text,
+  .slogans .slogan-2 .text,
+  .slogans .slogan-3 .text {
+    max-width: 295px;
+    margin: 0 13px;
+    order: 2;
+    padding: 0;
+  }
+  .slogans .slogan-1 .text .before,
+  .slogans .slogan-2 .text .before,
+  .slogans .slogan-3 .text .before {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .slogans .slogan-1 .text .title,
+  .slogans .slogan-2 .text .title,
+  .slogans .slogan-3 .text .title {
+    font-size: 24px;
+    line-height: 20px;
+    letter-spacing: -0.2px;
+    margin-bottom: 20px;
+  }
+  .slogans .slogan-1 .text .content p,
+  .slogans .slogan-2 .text .content p,
+  .slogans .slogan-3 .text .content p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .slogans .slogan-1 .photo-mark,
+  .slogans .slogan-2 .photo-mark,
+  .slogans .slogan-3 .photo-mark {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: center;
+    margin-left: 0;
+  }
+  .slogans .slogan-1 .photo-mark img,
+  .slogans .slogan-2 .photo-mark img,
+  .slogans .slogan-3 .photo-mark img {
+    width: 321px;
+    height: 381px;
+    margin-top: -25px;
+    margin-bottom: 57px;
+  }
+  .slogans .slogan-1 .photo-mark .decoration-dots-1,
+  .slogans .slogan-2 .photo-mark .decoration-dots-1,
+  .slogans .slogan-3 .photo-mark .decoration-dots-1 {
+    width: 120px;
+    height: 40px;
+  }
+  .slogans .slogan-2 {
+    padding: 40px 0 0 0;
+  }
+  .slogans .slogan-2 .right-block .decoration-dots-2 {
+    width: 193px;
+    height: 61px;
+  }
+  .slogans .slogan-2 .right-block .text {
+    padding: 0;
+  }
+  .slogans .slogan-2 .photo-mark {
+    margin: 0;
+  }
+  .slogans .slogan-2 .photo-mark img {
+    width: 317px;
+    height: 439px;
+    margin: 0;
+  }
+  .slogans .slogan-3 {
+    padding: 43px 0 0 0;
+    background-size: cover;
+  }
+  .slogans .slogan-3 .left-block {
+    order: 3;
+  }
+  .slogans .slogan-3 .left-block .decoration-dots-1 {
+    width: 193px;
+    height: 61px;
+  }
+  .slogans .slogan-3 .left-block .text {
+    margin-top: -40px;
+    padding: 0;
+  }
+  .slogans .slogan-3 .left-block .text .title {
+    font-size: 16px;
+    line-height: 14px;
+  }
+  .slogans .slogan-3 .left-block .sign {
+    margin: 0 0 40px 0;
+  }
+  .slogans .slogan-3 .left-block .sign img {
+    width: 109px;
+    height: 25px;
+  }
+  .slogans .slogan-3 .photo-mark img {
+    width: 321px;
+    height: 382px;
+  }
+  .partners {
+    padding: 40px 14px;
+  }
+  .partners .title {
+    font-size: 24px;
+    line-height: 31px;
+  }
+  .partners .list {
+    margin: 20px auto;
+    max-width: 345px;
+  }
+  .partners .list .partner-item {
+    margin: 0;
+    width: 110px;
+    height: 52px;
+  }
+  .partners .description {
+    max-width: 295px;
+    margin: 0 auto 20px auto;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .partners .buttons .read-manual {
+    padding: 7px 18px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-right: 10px;
+  }
+  .partners .buttons .video {
+    padding: 7px 11px;
+  }
+  .partners .buttons .video img {
+    height: 14px;
+    width: 14px;
+    margin-right: 9px;
+  }
+  .partners .buttons .video span {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .no-risks {
+    padding: 40px 35px;
+  }
+  .no-risks .title {
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 20px;
+  }
+  .no-risks .description {
+    max-width: 295px;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0 auto 20px auto;
+  }
+  .no-risks .buttons .read-manual {
+    padding: 7px 18px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-right: 10px;
+  }
+  .no-risks .buttons .video {
+    padding: 7px 11px;
+  }
+  .no-risks .buttons .video img {
+    height: 14px;
+    width: 14px;
+    margin-right: 9px;
+  }
+  .no-risks .buttons .video span {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .country-tabs .container {
+    max-width: 375px;
+    padding: 40px 24px;
+  }
+  .country-tabs .container .title {
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 20px;
+  }
+  .country-tabs .container .description {
+    font-size: 12px;
+    line-height: 15px;
+    max-width: 295px;
+    margin-bottom: 40px;
+  }
+  .country-tabs .container .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0;
+  }
+  .country-tabs .container .tabs button.country {
+    padding: 7px 16px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+  }
+  .country-tabs .container .tabs button.country:nth-child(3) {
+    margin-right: 0;
+  }
+  .country-tabs .container .tabs button.country :last-child {
+    margin-right: 0;
+  }
+  .country-tabs .container .list .item {
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .country-tabs .container .list .item:first-child {
+    margin-top: 10px;
+  }
+  .country-tabs .container .list .item:last-child {
+    margin-bottom: 40px;
+  }
+  .country-tabs .container .list .item .item-photo {
+    min-width: 140px;
+    min-height: 140px;
+    width: 140px;
+    height: 140px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .country-tabs .container .list .item .item-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 8px;
+  }
+  .country-tabs .container .list .item .item-description .item-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .country-tabs .container .list .item .item-description .secondary-description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .country-tabs .container .list .item .item-description .main-description {
+    margin: 10px 0 20px 0;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .country-tabs .container .list .item .item-description .buttons .read-manual {
+    padding: 7px 18px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-right: 10px;
+  }
+  .country-tabs .container .list .item .item-description .buttons .video {
+    padding: 7px 11px;
+  }
+  .country-tabs .container .list .item .item-description .buttons .video img {
+    height: 14px;
+    width: 14px;
+    margin-right: 9px;
+  }
+  .country-tabs .container .list .item .item-description .buttons .video span {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .features {
+    max-width: 375px;
+    padding: 40px 30px;
+  }
+  .features .title {
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 20px;
+  }
+  .features .features-logo {
+    height: 55px;
+    width: 39px;
+  }
+  .features .accordeon-item .header .left {
+    padding: 8px 14px 8px 0;
+  }
+  .features .accordeon-item .header .left .name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .features .accordeon-item .header .left .open-close {
+    width: 10px;
+    height: 6px;
+  }
+  .features .accordeon-item .header .right {
+    padding: 8px 17px;
+  }
+  .features .accordeon-item .header .right .complete {
+    width: 19px;
+    height: 19px;
+  }
+  .features .accordeon-item .content {
+    max-width: 260px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .features .accordeon-item .content.open {
+    height: 240px;
+    margin-bottom: 20px;
+  }
+  .contacts-block {
+    max-width: 375px;
+    padding: 40px;
+  }
+  .contacts-block .title {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  .contacts-block .secondary-title {
+    margin-bottom: 21px;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: -0.2px;
+  }
+  .contacts-block .contact-items {
+    flex-direction: column;
+  }
+  .contacts-block .contact-items .item {
+    padding: 9px 15px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .contacts-block .contact-items .item .icon {
+    height: 31px;
+    width: 31px;
+    margin-right: 8px;
+  }
+  .contacts-block .contact-items .item .content {
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: -0.2px;
+  }
+  .survey {
+    height: 666px;
+    background: url(../assets/images/photo_left_mobile.jpg) no-repeat left top, url(../assets/images/photo_right_mobile.jpg) no-repeat left bottom;
+    background-size: 100% 162px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .survey .white-gradient {
+    padding: 70px 0;
+    width: 100%;
+    background: linear-gradient(180deg, transparent 0, white 10%, white 90%, transparent 100%);
+    height: 470px;
+  }
+  .survey .white-gradient .title {
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+  .survey .white-gradient .progress-bar {
+    width: 150px;
+    height: 15px;
+    margin-bottom: 20px;
+  }
+  .survey .white-gradient .progress-bar .filled {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .survey .white-gradient .radio-group {
+    max-width: 270px;
+    margin-bottom: 15px;
+  }
+  .survey .white-gradient .radio-group label {
+    margin-bottom: 15px;
+  }
+  .survey .white-gradient .radio-group label input + .custom-radio {
+    width: 14px;
+    height: 14px;
+    min-height: 14px;
+    min-width: 14px;
+    border: solid 1px #cbcbcb;
+    padding: 2px;
+    margin-right: 10px;
+  }
+  .survey .white-gradient .radio-group label input:checked + .custom-radio {
+    border: 1px solid #00538a;
+  }
+  .survey .white-gradient .radio-group label input:checked + .custom-radio .innerCircle {
+    width: 12px;
+    height: 12px;
+    min-width: 12px;
+    min-height: 12px;
+    border: solid 1px white;
+  }
+  .survey .white-gradient .radio-group label span {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .survey .white-gradient .next {
+    padding: 8px 17px 7px 26px;
+    border-radius: 3px;
+  }
+  .survey .white-gradient .next span {
+    font-size: 14px;
+    line-height: 14px;
+    margin-right: 10px;
+  }
+  .survey .white-gradient .next img {
+    width: 6px;
+    height: 10px;
+  }
+  .footer .container {
+    max-width: 375px;
+    padding: 14px 20px;
+  }
+  .footer .container .logo {
+    margin-right: 0;
+    width: 144px;
+    height: 37px;
+  }
+  .footer .container .logo img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer .container .footer-menu {
+    display: none;
   }
 }
