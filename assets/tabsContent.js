@@ -49,7 +49,7 @@ const tabsContent = [
     name: 'Österreich',
     items: [
       {
-        photo: 'photo_deutschland_4.png',
+        photo: 'photo_österreich_1.png',
         itemTitle: 'Zypern-Organschaft',
         secondaryDescription: 'Steuerfrei in Österreich.',
         mainDescription: 'Wem Dubai zu fremdartig, Malta zu steinig und Zypern zu sonnig ist, der kann im schönen ' +
@@ -59,7 +59,7 @@ const tabsContent = [
           'Steuervorbehalt. Mehr dazu in unserem spannenden Kurs.',
       },
       {
-        photo: 'photo_deutschland_4.png',
+        photo: 'photo_österreich_2.png',
         itemTitle: 'Stiftungsgestaltung',
         secondaryDescription: '0-15 % Steuern in Deutschland.',
         mainDescription: 'Eine deutsche gemeinnützige oder (unternehmensverbundene) private Stiftung können Sie ' +
@@ -75,7 +75,7 @@ const tabsContent = [
     name: 'Schweiz',
     items: [
       {
-        photo: 'photo_deutschland_4.png',
+        photo: 'photo_schweiz_1.png',
         itemTitle: 'Schweiz',
         secondaryDescription: 'Sicherheit und Wohlstand.',
         mainDescription: 'Die Schweiz ist das Land meiner Träume und auch für viele Auswanderer und smarte ' +
@@ -90,7 +90,7 @@ const tabsContent = [
     name: 'Europa',
     items: [
       {
-        photo: 'photo_deutschland_4.png',
+        photo: 'photo_europa_1.png',
         itemTitle: 'Bulgarien',
         secondaryDescription: '10 % Flat-Tax genießen.',
         mainDescription: 'Führende deutsche Software-Unternehmer haben dieses vollkommen unterschätzte Land bereits ' +
@@ -99,7 +99,7 @@ const tabsContent = [
           'zur neuen Heimat werden. Hier können Sie extrem schnell Wohlstand aufbauen.',
       },
       {
-        photo: 'photo_deutschland_4.png',
+        photo: 'photo_europa_2.png',
         itemTitle: 'Estland',
         secondaryDescription: '0 % Steuern in der EU.',
         mainDescription: 'Unser Geheimtipp No. 1: Den Meisten unbekannt, bietet Estland in Europa smarten ' +
@@ -108,7 +108,7 @@ const tabsContent = [
           'und ein extrem innovativ-modernes Geschäftsklima.',
       },
       {
-        photo: 'photo_deutschland_4.png',
+        photo: 'photo_europa_3.png',
         itemTitle: 'Irland',
         secondaryDescription: '12,5 % im Software-Paradies.',
         mainDescription: 'Apple, Google und Facebook sind schon lange dort. Viele Milliarden der größten ' +
@@ -117,7 +117,7 @@ const tabsContent = [
           'können Sie so einfach und steueroptimiert wirtschaften wie in Irland. ',
       },
       {
-        photo: 'photo_deutschland_4.png',
+        photo: 'photo_europa_4.png',
         itemTitle: 'Liechtenstein',
         secondaryDescription: 'Das diskrete Fürstentum.',
         mainDescription: 'Ein attraktiver Gewinnsteuersatz von 12.5%, keine Quellenbesteuerung auf Dividenden, ' +
@@ -127,7 +127,7 @@ const tabsContent = [
           'aufbauen.',
       },
       {
-        photo: 'photo_deutschland_4.png',
+        photo: 'photo_europa_5.png',
         itemTitle: 'Malta',
         secondaryDescription: '5 % Steuern genießen.',
         mainDescription: 'Große Unternehmen wie die Deutsche Bank, Playmobil, BMW, Sixt, Heidelberger Cement, ' +
@@ -136,7 +136,7 @@ const tabsContent = [
           'an Kirchen weltweit. Auch mit einem deutschen Wohnsitz sind sehr spannende Konzepte umsetzbar.',
       },
       {
-        photo: 'photo_deutschland_4.png',
+        photo: 'photo_europa_6.png',
         itemTitle: 'Tschechien',
         secondaryDescription: 'Der unterschätzte Nachbar.',
         mainDescription: 'Das Land in unserer unmittelbaren Nachbarschaft kennt kein Außensteuergesetz und lässt ' +
@@ -145,7 +145,7 @@ const tabsContent = [
           'Krankenversicherung und Sozialabgaben. Und nicht zuletzt ist Prag eine der schönsten Hauptstädte der Welt.',
       },
       {
-        photo: 'photo_deutschland_4.png',
+        photo: 'photo_europa_7.png',
         itemTitle: 'Zypern',
         secondaryDescription: 'Steuerparadies im Mittelmeer.',
         mainDescription: 'Simply-Non-Dom. Über 300 Sonnentage im Jahr. Eine Körperschaftssteuer von 12,5%. Keine ' +
@@ -161,7 +161,7 @@ const tabsContent = [
     name: 'Asien',
     items: [
       {
-        photo: 'photo_deutschland_4.png',
+        photo: 'photo_asien_1.png',
         itemTitle: 'Australien',
         secondaryDescription: 'Sicherheit + Lebensqualität.',
         mainDescription: 'Schneeweiße Sandstrände, farbenprächtige Unterwasserwelten und das pulsierende Sydney. ' +
@@ -170,7 +170,7 @@ const tabsContent = [
           'Kontinent. So gelingt das Auswandern nach Australien. ',
       },
       {
-        photo: 'photo_deutschland_4.png',
+        photo: 'photo_asien_2.png',
         itemTitle: 'Hong Kong',
         secondaryDescription: 'Steuerfrei + Bankgeheimnis.',
         mainDescription: 'Bis 2047 der wahrscheinlich sicherste Ort der Welt für Ihr Vermögen. Hongkong kennt keine ' +
@@ -179,7 +179,7 @@ const tabsContent = [
           'Mein weltweiter Favorit.',
       },
       {
-        photo: 'photo_deutschland_4.png',
+        photo: 'photo_asien_3.png',
         itemTitle: 'Malaysia',
         secondaryDescription: '3 % Steuern zahlen.',
         mainDescription: 'Extrem günstig ein Leben im Paradies führen. Richtig aufgestellt, können Sie in Malaysia ' +
@@ -188,7 +188,7 @@ const tabsContent = [
           'Südostasien. Lernen Sie Malaysia kennen, ein kaum bekanntes Juwel. ',
       },
       {
-        photo: 'photo_deutschland_4.png',
+        photo: 'photo_asien_4.png',
         itemTitle: 'Emirate',
         secondaryDescription: 'Oase in der Wüste.',
         mainDescription: 'Wer schon immer in den Emiraten residieren, legal gar keine Steuern mehr gewerblich wie ' +
@@ -197,7 +197,7 @@ const tabsContent = [
           'anonym und Sie können recht einfach in die VAE einwandern und steuerfrei leben.',
       },
       {
-        photo: 'photo_deutschland_4.png',
+        photo: 'photo_asien_5.png',
         itemTitle: 'Singapur.',
         secondaryDescription: 'Steuerfrei und diskret.',
         mainDescription: 'Die sauberste Stadt der Welt. Ein gewaltfreier, extrem sicherer Ort. Und keine Steuern ' +
@@ -206,7 +206,7 @@ const tabsContent = [
           'Firmengründung und den VISA-Bestimmungen. ',
       },
       {
-        photo: 'photo_deutschland_4.png',
+        photo: 'photo_asien_6.png',
         itemTitle: 'Thailand.',
         secondaryDescription: 'Auswandern ins Paradies.',
         mainDescription: 'Die ganze Welt liebt Thailand: Traumhafte Sandstrände, allerorten glückliche Menschen, ' +
@@ -222,7 +222,7 @@ const tabsContent = [
     name: 'Amerika',
     items: [
       {
-        photo: 'photo_deutschland_4.png',
+        photo: 'photo_amerika_1.png',
         itemTitle: 'Kanada',
         secondaryDescription: 'Pure Freude tanken.',
         mainDescription: 'Eines der schönsten Länder der Welt, das beste Gesundheits- und Bildungssystem in Amerika, ' +
@@ -231,7 +231,7 @@ const tabsContent = [
           'der Steuerfreiheit. So gelingt die neue Existenz in Kanada.',
       },
       {
-        photo: 'photo_deutschland_4.png',
+        photo: 'photo_amerika_2.png',
         itemTitle: 'Panama',
         secondaryDescription: 'Steuerfrei nach Lateinamerika.',
         mainDescription: 'Durch die Panama Papers ziemlich in Verruf gekommen, ist das schöne Land in Mittelamerika ' +
@@ -240,7 +240,7 @@ const tabsContent = [
           'viele Herzen höher schlagen.',
       },
       {
-        photo: 'photo_deutschland_4.png',
+        photo: 'photo_amerika_3.png',
         itemTitle: 'USA',
         secondaryDescription: 'Leben auf der Überholspur.',
         mainDescription: 'Als reichstes Land der Welt noch immer eines der beliebtesten Länder für Auswanderer. ' +
