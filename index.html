@@ -9,6 +9,24 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+<div class="header-top">
+    <div class="logo">
+        <img src="assets/images/logo_header.svg" alt="logo">
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="#" class="active">Wirtschaftsberatung</a></li>
+            <li><a href="#">Unsere Klienten</a></li>
+            <li><a href="#">Akademie</a></li>
+            <li><a href="#">12 Fragen</a></li>
+        </ul>
+    </div>
+    <div class="contacts">
+        <button class="consult">Beratung vereinbaren</button>
+        <button class="call"></button>
+        <button class="profile"></button>
+    </div>
+</div>
 <div class="main">
     <div class="video-wrap">
         <video muted loop autoplay>
@@ -19,24 +37,6 @@
         <img src="assets/images/mask.svg" alt="">
     </div>
     <div class="header-content">
-        <div class="header">
-            <div class="logo">
-                <img src="assets/images/logo_header.svg" alt="logo">
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#" class="active">Wirtschaftsberatung</a></li>
-                    <li><a href="#">Unsere Klienten</a></li>
-                    <li><a href="#">Akademie</a></li>
-                    <li><a href="#">12 Fragen</a></li>
-                </ul>
-            </div>
-            <div class="contacts">
-                <button class="consult">Beratung vereinbaren</button>
-                <button class="call"></button>
-                <button class="profile"></button>
-            </div>
-        </div>
         <div class="video-action">
             <h1>
                 Steuern sparen<br/>
@@ -114,22 +114,20 @@
             <span class="advantage-description-title ">
                 Top-Steuerexperten im In- und Ausland
             </span>
-            <div class="advantage-description-content ">
-                <p>
-                    Sie brauchen aufgrund Ihrer hohen Steuerbelastung eine qualifizierte Zweitmeinung zu Ihrem
-                    Steuerberater oder Rechtsanwalt?
-                </p>
-                <p>
-                    Dann freuen wir uns auf die Zusammenarbeit.
-                </p>
-                <p>
-                    Denn wir haben in 9 Jahren unternehmerischer Praxis ein Experten-Netzwerk geschaffen, in dem wir
-                    die weltweit führenden Steuerberater, Anwälte, Firmengründungsexperten und erfahrensten Berater für
-                    Genossenschaften, Stiftungen und Wirtschaftsvereine zusammengebracht haben, um Sie mit unserer
-                    ganzheitlichen Wirtschafts- und Unternehmensberatung auf dem Weg zu Ihrer maximalen
-                    wirtschaftlichen Freiheit begleiten zu können.
-                </p>
-            </div>
+            <span class="advantage-description-content ">
+                Sie brauchen aufgrund Ihrer hohen Steuerbelastung eine qualifizierte Zweitmeinung zu Ihrem
+                Steuerberater oder Rechtsanwalt?
+                <br/>
+                <br/>
+                Dann freuen wir uns auf die Zusammenarbeit.
+                <br/>
+                <br/>
+                Denn wir haben in 9 Jahren unternehmerischer Praxis ein Experten-Netzwerk geschaffen, in dem wir
+                die weltweit führenden Steuerberater, Anwälte, Firmengründungsexperten und erfahrensten Berater für
+                Genossenschaften, Stiftungen und Wirtschaftsvereine zusammengebracht haben, um Sie mit unserer
+                ganzheitlichen Wirtschafts- und Unternehmensberatung auf dem Weg zu Ihrer maximalen
+                wirtschaftlichen Freiheit begleiten zu können.
+            </span>
         </div>
     </div>
 </div>
@@ -495,12 +493,12 @@
             Kurse anzuschauen. Somit studieren Sie direkt, woraus Sie auch den größten Nutzen ziehen können.
         </div>
         <div class="tabs">
-            <button class="country active">Deutschland</button>
-            <button class="country">Österreich</button>
-            <button class="country">Schweiz</button>
-            <button class="country">Europa</button>
-            <button class="country">Asien</button>
-            <button class="country">Amerika</button>
+            <button class="country active" data-city-id="0">Deutschland</button>
+            <button class="country" data-country-id="1">Österreich</button>
+            <button class="country" data-country-id="2">Schweiz</button>
+            <button class="country" data-country-id="3">Europa</button>
+            <button class="country" data-country-id="4">Asien</button>
+            <button class="country" data-country-id="5">Amerika</button>
         </div>
         <div class="list">
             <div class="item">
@@ -636,7 +634,7 @@
                 <div class="name">
                     Kostenfreier Test-Monat.
                 </div>
-                <div class="arrow"><button class="open-close"></button></div>
+                <button class="open-close"></button>
             </div>
             <div class="right">
                 <button class="complete">
@@ -655,9 +653,9 @@
         <div class="header">
             <div class="left">
                 <div class="name">
-                    Kostenfreier Test-Monat.
+                    Extrem günstig einsetzbar.
                 </div>
-                <div class="arrow"><button class="open-close"></button></div>
+                <button class="open-close"></button>
             </div>
             <div class="right">
                 <button class="complete">
@@ -666,19 +664,20 @@
             </div>
         </div>
         <div class="content">
-            Da wir Ihnen zunächst einmal beweisen wollen, dass der Aupris-Rechner Sie enorm entlasten wird und neue
-            Umsatzpotenziale bringt, gehen wir mit einem vollkommen kostenfreien und unverbindlichen Test-Monat in
-            Vorleistung. Erst wenn Sie wirklich von den Möglichkeiten begeistert sind, die Ihnen Aupris bietet, können
-            Sie sich für unsere kostenpflichtige Version ab 69 € im Monat entscheiden.
+            Eine Nutzungsgebühr wird erst fällig, wenn Sie den Preisrechner verbindlich bestellen. Schon ab 69 Euro im
+            Monat ist Aupris für Sie einsatzbereit. Damit liegen Sie deutlich unterhalb der Kosten, die Händler für den
+            Betrieb und die Wartung selbst entwickelter Preisrechner kalkulieren müssen. Auch im Vergleich zu sonstigen
+            üblichen laufenden Kosten, beispielsweise für geleaste PKW, Internet, Telefon oder anderer Betriebsausgaben
+            ist Aupris im Leistungsvergleich ein zu vernachlässigender Kostenfaktor.
         </div>
     </div>
     <div class="accordeon-item">
         <div class="header">
             <div class="left">
                 <div class="name">
-                    Kostenfreier Test-Monat.
+                    Aupris erhöht Ihre Einnahmen.
                 </div>
-                <div class="arrow"><button class="open-close"></button></div>
+                <button class="open-close"></button>
             </div>
             <div class="right">
                 <button class="complete">
@@ -687,19 +686,16 @@
             </div>
         </div>
         <div class="content">
-            Da wir Ihnen zunächst einmal beweisen wollen, dass der Aupris-Rechner Sie enorm entlasten wird und neue
-            Umsatzpotenziale bringt, gehen wir mit einem vollkommen kostenfreien und unverbindlichen Test-Monat in
-            Vorleistung. Erst wenn Sie wirklich von den Möglichkeiten begeistert sind, die Ihnen Aupris bietet, können
-            Sie sich für unsere kostenpflichtige Version ab 69 € im Monat entscheiden.
+            Für den eingesparten Betrag von 25.000 € für eine halb ausgereifte und langwierige Eigenentwicklung können Sie Aupris über 13 Jahre lang erfolgreich für Ihr Online-Geschäft einsetzen. Außerdem sparen Sie sämtliche Kosten für Server-Administration, Bug-Fixing und ständige Updates.
         </div>
     </div>
     <div class="accordeon-item">
         <div class="header">
             <div class="left">
                 <div class="name">
-                    Kostenfreier Test-Monat.
+                    32 Jahre Branchen-Erfahrung.
                 </div>
-                <div class="arrow"><button class="open-close"></button></div>
+                <button class="open-close"></button>
             </div>
             <div class="right">
                 <button class="complete">
@@ -708,19 +704,18 @@
             </div>
         </div>
         <div class="content">
-            Da wir Ihnen zunächst einmal beweisen wollen, dass der Aupris-Rechner Sie enorm entlasten wird und neue
-            Umsatzpotenziale bringt, gehen wir mit einem vollkommen kostenfreien und unverbindlichen Test-Monat in
-            Vorleistung. Erst wenn Sie wirklich von den Möglichkeiten begeistert sind, die Ihnen Aupris bietet, können
-            Sie sich für unsere kostenpflichtige Version ab 69 € im Monat entscheiden.
+            Der Aupris-Rechner wurde zusammen mit der Futures-Services GmbH entwickelt die sich seit über 32 Jahren als
+            ein führender und kompetenter Dienstleister für die Energiebranche etabliert hat. Mittlerweile vertrauen
+            über 1.300 Nutzer unserer Expertise und arbeiten seit vielen Jahren erfolgreich mit unseren Systemen.
         </div>
     </div>
     <div class="accordeon-item">
         <div class="header">
             <div class="left">
                 <div class="name">
-                    Kostenfreier Test-Monat.
+                    Wir tragen alle Wartungskosten.
                 </div>
-                <div class="arrow"><button class="open-close"></button></div>
+                <button class="open-close"></button>
             </div>
             <div class="right">
                 <button class="complete">
@@ -729,31 +724,30 @@
             </div>
         </div>
         <div class="content">
-            Da wir Ihnen zunächst einmal beweisen wollen, dass der Aupris-Rechner Sie enorm entlasten wird und neue
-            Umsatzpotenziale bringt, gehen wir mit einem vollkommen kostenfreien und unverbindlichen Test-Monat in
-            Vorleistung. Erst wenn Sie wirklich von den Möglichkeiten begeistert sind, die Ihnen Aupris bietet, können
-            Sie sich für unsere kostenpflichtige Version ab 69 € im Monat entscheiden.
+            Aupris arbeitet zuverlässig und fehlerfrei. Wir übernehmen regelmäßige Wartungsarbeiten und Aktualisierungen
+            komplett auf unsere Kosten. Damit bleiben Sie technisch auf dem neuesten Stand und stets auf Augenhöhe mit
+            den aktivsten und modernsten Online-Handelsunternehmen.
         </div>
-    </div>
-    <div class="accordeon-item">
-        <div class="header">
-            <div class="left">
-                <div class="name">
-                    Kostenfreier Test-Monat.
+        <div class="accordeon-item">
+            <div class="header">
+                <div class="left">
+                    <div class="name">
+                        Ständige Weiterentwicklungen.
+                    </div>
+                    <button class="open-close"></button>
                 </div>
-                <div class="arrow"><button class="open-close"></button></div>
-            </div>
-            <div class="right">
-                <button class="complete">
+                <div class="right">
+                    <button class="complete">
 
-                </button>
+                    </button>
+                </div>
             </div>
-        </div>
-        <div class="content">
-            Da wir Ihnen zunächst einmal beweisen wollen, dass der Aupris-Rechner Sie enorm entlasten wird und neue
-            Umsatzpotenziale bringt, gehen wir mit einem vollkommen kostenfreien und unverbindlichen Test-Monat in
-            Vorleistung. Erst wenn Sie wirklich von den Möglichkeiten begeistert sind, die Ihnen Aupris bietet, können
-            Sie sich für unsere kostenpflichtige Version ab 69 € im Monat entscheiden.
+            <div class="content">
+                Teil der laufenden Weiterentwicklung von Aupris ist eine App sowie ein Loginbereich für Ihre Kunden für
+                eine noch engere Bindung. Auch ein Telefonpreisrechner wird in absehbarer Zeit integriert. Damit führen
+                Sie erfolgreiche Verkaufsgespräche auch am Telefon und schließen verwirrende Preisabweichungen zum
+                Internetverkauf aus.
+            </div>
         </div>
     </div>
 </div>
@@ -904,6 +898,7 @@
 
 <script src="scripts/jquery-3.4.1.min.js"></script>
 <script src="scripts/owl.carousel.min.js"></script>
+<script src="assets/tabsContent.js"></script>
 <script src="scripts/script.js"></script>
 
 </body>

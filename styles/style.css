@@ -88,6 +88,93 @@ button {
   max-width: 1920px;
   margin: 0 auto;
 }
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  padding: 32px 140px;
+  background-color: transparent;
+  transition: background-color 0.6s ease;
+}
+.header-top.scrolled {
+  background-color: #014f8e;
+}
+.header-top .logo {
+  width: 320px;
+}
+.header-top .logo img {
+  width: 100%;
+}
+.header-top .menu ul {
+  display: flex;
+}
+.header-top .menu ul li {
+  list-style: none;
+  margin-right: 44px;
+}
+.header-top .menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 31px;
+  padding: 4px 0;
+}
+.header-top .menu ul li a.active:after,
+.header-top .menu ul li a:hover:after {
+  width: 100%;
+}
+.header-top .menu ul li a:after {
+  content: '';
+  display: block;
+  position: relative;
+  top: 4px;
+  height: 2px;
+  width: 0;
+  background: white;
+  transition: width 0.3s ease-in;
+}
+.header-top .menu ul li a:last-child {
+  margin: 0;
+}
+.header-top .contacts {
+  display: flex;
+  align-items: center;
+}
+.header-top .contacts button.consult {
+  padding: 13px 25px;
+  color: white;
+  font-size: 23px;
+  line-height: 29px;
+  font-weight: 600;
+  background: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-right: 36px;
+  position: relative;
+  top: 0;
+  transition: top 0.3s ease;
+}
+.header-top .contacts button.consult:hover {
+  top: -2px;
+}
+.header-top .contacts button.call,
+.header-top .contacts button.profile {
+  width: 36px;
+  height: 36px;
+}
+.header-top .contacts button.call {
+  background: url("../assets/images/icon_call.svg") 50% 50% no-repeat;
+  background-size: contain;
+  margin-right: 22px;
+}
+.header-top .contacts button.profile {
+  background: url("../assets/images/icon_user.svg") 50% 50% no-repeat;
+  background-size: contain;
+}
 .main {
   height: 924px;
   display: flex;
@@ -123,84 +210,6 @@ button {
   margin: 0 auto;
   width: 100%;
   z-index: 2;
-}
-.main .header-content .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.main .header-content .header .logo {
-  width: 320px;
-}
-.main .header-content .header .logo img {
-  width: 100%;
-}
-.main .header-content .header .menu ul {
-  display: flex;
-}
-.main .header-content .header .menu ul li {
-  list-style: none;
-  margin-right: 44px;
-}
-.main .header-content .header .menu ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 31px;
-  padding: 4px 0;
-}
-.main .header-content .header .menu ul li a.active:after,
-.main .header-content .header .menu ul li a:hover:after {
-  width: 100%;
-}
-.main .header-content .header .menu ul li a:after {
-  content: '';
-  display: block;
-  position: relative;
-  top: 4px;
-  height: 2px;
-  width: 0;
-  background: white;
-  transition: width 0.3s ease-in;
-}
-.main .header-content .header .menu ul li a:last-child {
-  margin: 0;
-}
-.main .header-content .header .contacts {
-  display: flex;
-  align-items: center;
-}
-.main .header-content .header .contacts button.consult {
-  padding: 13px 25px;
-  color: white;
-  font-size: 23px;
-  line-height: 29px;
-  font-weight: 600;
-  background: none;
-  border: 1px solid white;
-  border-radius: 5px;
-  margin-right: 36px;
-  position: relative;
-  top: 0;
-  transition: top 0.3s ease;
-}
-.main .header-content .header .contacts button.consult:hover {
-  top: -2px;
-}
-.main .header-content .header .contacts button.call,
-.main .header-content .header .contacts button.profile {
-  width: 36px;
-  height: 36px;
-}
-.main .header-content .header .contacts button.call {
-  background: url("../assets/images/icon_call.svg") 50% 50% no-repeat;
-  background-size: contain;
-  margin-right: 22px;
-}
-.main .header-content .header .contacts button.profile {
-  background: url("../assets/images/icon_user.svg") 50% 50% no-repeat;
-  background-size: contain;
 }
 .main .header-content .video-action {
   color: white;
@@ -803,18 +812,14 @@ button {
   height: 100%;
 }
 .features .accordeon-item {
-  margin-bottom: 72px;
   width: 100%;
-}
-.features .accordeon-item:last-child {
-  margin-bottom: 240px;
 }
 .features .accordeon-item .header {
   display: flex;
   border-top: 1px solid #79859a;
 }
 .features .accordeon-item .header .left {
-  padding: 31px 48px 31px;
+  padding: 31px 48px 31px 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -827,12 +832,17 @@ button {
   font-weight: 900;
   color: #014f8e;
 }
-.features .accordeon-item .header .left .arrow .open-close {
+.features .accordeon-item .header .left .open-close {
   width: 26px;
   height: 15px;
   background: url("../assets/images/arrow_up.svg");
   background-size: cover;
   cursor: pointer;
+  transform: rotate(180deg);
+  transition: transform 0.6s ease-in-out;
+}
+.features .accordeon-item .header .left .open-close.open {
+  transform: rotate(0);
 }
 .features .accordeon-item .header .right {
   display: flex;
@@ -852,6 +862,14 @@ button {
   font-size: 25px;
   line-height: 32px;
   color: #4b4b4b;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s ease-in-out;
+  margin-bottom: 0;
+}
+.features .accordeon-item .content.open {
+  height: 220px;
+  margin-bottom: 72px;
 }
 .contacts-block {
   margin: 0 auto;
@@ -1552,18 +1570,14 @@ button {
     height: 100%;
   }
   .features .accordeon-item {
-    margin-bottom: 72px;
     width: 100%;
-  }
-  .features .accordeon-item:last-child {
-    margin-bottom: 240px;
   }
   .features .accordeon-item .header {
     display: flex;
     border-top: 1px solid #79859a;
   }
   .features .accordeon-item .header .left {
-    padding: 31px 48px 31px;
+    padding: 31px 48px 31px 0px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -1576,7 +1590,7 @@ button {
     font-weight: 900;
     color: #014f8e;
   }
-  .features .accordeon-item .header .left .arrow .open-close {
+  .features .accordeon-item .header .left .open-close {
     width: 26px;
     height: 15px;
     background: url("../assets/images/arrow_up.svg");
@@ -1597,10 +1611,14 @@ button {
     cursor: pointer;
   }
   .features .accordeon-item .content {
+    margin-bottom: 0;
     max-width: 881px;
     font-size: 25px;
     line-height: 32px;
     color: #4b4b4b;
+  }
+  .features .accordeon-item .content.open {
+    margin-bottom: 72px;
   }
   .contacts-block {
     margin: 0 auto;

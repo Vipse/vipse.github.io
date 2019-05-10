@@ -37,6 +37,95 @@ button {
   max-width: 1920px;
   margin: 0 auto;
 }
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  padding: 32px 140px;
+  background-color: transparent;
+  transition: background-color 0.6s ease;
+  &.scrolled {
+    background-color: #014f8e;
+  }
+  .logo {
+    width: 320px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .menu {
+    ul {
+      display: flex;
+      li {
+        list-style: none;
+        margin-right: 44px;
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 31px;
+          padding: 4px 0;
+          &.active:after, &:hover:after {
+            width: 100%;
+          }
+          &:after {
+            content: '';
+            display: block;
+            position: relative;
+            top: 4px;
+            height: 2px;
+            width: 0;
+            background: white;
+            transition: width 0.3s ease-in;
+          }
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .contacts {
+    display: flex;
+    align-items: center;
+    button.consult {
+      padding: 13px 25px;
+      color: white;
+      font-size: 23px;
+      line-height: 29px;
+      font-weight: 600;
+      background: none;
+      border: 1px solid white;
+      border-radius: 5px;
+      margin-right: 36px;
+      position: relative;
+      top: 0;
+      transition: top 0.3s ease;
+      &:hover {
+        top: -2px;
+      }
+    }
+    button.call, button.profile {
+      width: 36px;
+      height: 36px;
+
+    }
+    button.call {
+      background: url("../assets/images/icon_call.svg") 50% 50% no-repeat;
+      background-size: contain;
+      margin-right: 22px;
+    }
+    button.profile {
+      background: url("../assets/images/icon_user.svg") 50% 50% no-repeat;
+      background-size: contain;
+    }
+  }
+}
 .main {
   height: 924px;
   display: flex;
@@ -72,86 +161,7 @@ button {
     margin: 0 auto;
     width: 100%;
     z-index: 2;
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .logo {
-        width: 320px;
-        img {
-          width: 100%;
-        }
-      }
 
-      .menu {
-        ul {
-          display: flex;
-          li {
-            list-style: none;
-            margin-right: 44px;
-            a {
-              color: white;
-              text-decoration: none;
-              font-size: 24px;
-              font-weight: 600;
-              line-height: 31px;
-              padding: 4px 0;
-              &.active:after, &:hover:after {
-                width: 100%;
-              }
-              &:after {
-                content: '';
-                display: block;
-                position: relative;
-                top: 4px;
-                height: 2px;
-                width: 0;
-                background: white;
-                transition: width 0.3s ease-in;
-              }
-              &:last-child {
-                margin: 0;
-              }
-            }
-          }
-        }
-      }
-      .contacts {
-        display: flex;
-        align-items: center;
-        button.consult {
-          padding: 13px 25px;
-          color: white;
-          font-size: 23px;
-          line-height: 29px;
-          font-weight: 600;
-          background: none;
-          border: 1px solid white;
-          border-radius: 5px;
-          margin-right: 36px;
-          position: relative;
-          top: 0;
-          transition: top 0.3s ease;
-          &:hover {
-            top: -2px;
-          }
-        }
-        button.call, button.profile {
-          width: 36px;
-          height: 36px;
-
-        }
-        button.call {
-          background: url("../assets/images/icon_call.svg") 50% 50% no-repeat;
-          background-size: contain;
-          margin-right: 22px;
-        }
-        button.profile {
-          background: url("../assets/images/icon_user.svg") 50% 50% no-repeat;
-          background-size: contain;
-        }
-      }
-    }
     .video-action {
       color: white;
       text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
@@ -781,16 +791,12 @@ button {
   }
 
   .accordeon-item {
-    margin-bottom: 72px;
     width: 100%;
-    &:last-child {
-      margin-bottom: 240px;
-    }
     .header {
       display: flex;
       border-top: 1px solid #79859a;
       .left {
-        padding: 31px 48px 31px;
+        padding: 31px 48px 31px 0;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -803,15 +809,20 @@ button {
           font-weight: 900;
           color: #014f8e;
         }
-        .arrow {
+
           .open-close {
             width: 26px;
             height: 15px;
             background: url("../assets/images/arrow_up.svg");
             background-size: cover;
             cursor: pointer;
+            transform: rotate(180deg);
+            transition: transform 0.6s ease-in-out;
+            &.open {
+              transform: rotate(0);
+            }
           }
-        }
+
       }
       .right {
         display: flex;
@@ -832,6 +843,14 @@ button {
       font-size: 25px;
       line-height: 32px;
       color: #4b4b4b;
+      height: 0;
+      overflow: hidden;
+      transition: height 0.4s ease-in-out;
+      margin-bottom: 0;
+      &.open {
+        height: 220px;
+        margin-bottom: 72px;
+      }
     }
   }
 }
@@ -1587,16 +1606,13 @@ button {
     }
 
     .accordeon-item {
-      margin-bottom: 72px;
       width: 100%;
-      &:last-child {
-        margin-bottom: 240px;
-      }
+      width: 100%;
       .header {
         display: flex;
         border-top: 1px solid #79859a;
         .left {
-          padding: 31px 48px 31px;
+          padding: 31px 48px 31px 0px;
           width: 100%;
           display: flex;
           justify-content: space-between;
@@ -1609,7 +1625,7 @@ button {
             font-weight: 900;
             color: #014f8e;
           }
-          .arrow {
+
             .open-close {
               width: 26px;
               height: 15px;
@@ -1617,7 +1633,7 @@ button {
               background-size: cover;
               cursor: pointer;
             }
-          }
+
         }
         .right {
           display: flex;
@@ -1634,10 +1650,14 @@ button {
         }
       }
       .content {
+        margin-bottom: 0;
         max-width: 881px;
         font-size: 25px;
         line-height: 32px;
         color: #4b4b4b;
+        &.open {
+          margin-bottom: 72px;
+        }
       }
     }
   }
