@@ -273,53 +273,27 @@ const advantagesList = [
   {
     id:1,
     title: 'Für Deutsche, Österreicher und Schweizer ',
-    description: 'Sie brauchen aufgrund Ihrer hohen Steuerbelastung eine qualifizierte Zweitmeinung zu Ihrem ' +
-      'Steuerberater oder Rechtsanwalt?' +
-      '<br/><br/>' +
-      'Dann freuen wir uns auf die Zusammenarbeit. ',
+    description: 'Im Rahmen unserer Zusammenarbeit werden Sie Strategien kennenlernen, die garantiert auch für Ihre aktuelle Situation funktionieren und Ihnen ermöglichen, künftig nur noch 15 - 0 % Steuern zahlen zu dürfen. Wir begleiten mit unseren Partnern sowohl ortsunabhängige Unternehmer bei der Gestaltung Ihrer Internationalisierung und des physischen Wohnsitzwechsels als auch gestandene Unternehmer/-innen im deutschsprachigen Raum, die legale und langfristig sinnvolle Strukturen mit Genossenschaften, Stiftungen und Wirtschaftsvereinen schaffen möchten, um extrem steueroptimiert Vermögen aufzubauen.',
   },
   {
     id:2,
     title: 'Praxis statt Theorie ',
-    description: 'Dann freuen wir uns auf die Zusammenarbeit.' +
-      '<br/><br/>' +
-      'Denn wir haben in 9 Jahren unternehmerischer Praxis ein Experten-Netzwerk geschaffen, in dem wir die weltweit ' +
-      'führenden Steuerberater, Anwälte, Firmengründungsexperten und erfahrensten Berater für Genossenschaften, ' +
-      'Stiftungen und Wirtschaftsvereine zusammengebracht haben, um Sie mit unserer ganzheitlichen Wirtschafts- ' +
-      'und Unternehmensberatung auf dem Weg zu Ihrer maximalen wirtschaftlichen Freiheit begleiten zu können. ',
+    description: 'All unsere Partner sind selbst erfolgreiche Unternehmer und keine bloßen Berater der grauen Theorie. Sie selbst wissen als Unternehmer am besten, dass man mit bloßem Wissen wenig weiterkommt. Nur die Praxis zeigt, was tatsächlich in der echten Welt Bestand haben kann. Marc Schippke hat in den letzten 9 Jahren selbst Gesellschaften unter anderem in der Schweiz, Liechtenstein, Hong Kong und den USA gegründet und hat Unternehmensgründungen in mehr als 28 Ländern im Rahmen unserer Wirtschaftsberatung begleitet. Er hat als Unternehmer durch falsche Beratung und falsche Konstruktionen sowie eingekaufte Steuer-Analysen mehr als 280.000 € Lehrgeld bezahlt, was Ihnen durch uns erspart bleibt!',
   },
   {
     id:3,
     title: 'Schutz und Vermehrung Ihres Vermögens ',
-    description: 'Sie brauchen aufgrund Ihrer hohen Steuerbelastung eine qualifizierte Zweitmeinung zu Ihrem ' +
-      'Steuerberater oder Rechtsanwalt?' +
-      '<br/><br/>' +
-      'Denn wir haben in 9 Jahren unternehmerischer Praxis ein Experten-Netzwerk geschaffen, in dem wir die weltweit ' +
-      'führenden Steuerberater, Anwälte, Firmengründungsexperten und erfahrensten Berater für Genossenschaften, ' +
-      'Stiftungen und Wirtschaftsvereine zusammengebracht haben, um Sie mit unserer ganzheitlichen Wirtschafts- und ' +
-      'Unternehmensberatung auf dem Weg zu Ihrer maximalen wirtschaftlichen Freiheit begleiten zu können. ',
+    description: 'Gerade in Deutschland, Österreich und der Schweiz gibt es geniale Möglichkeiten, steueroptimiert Vermögen aufzubauen, sofern Sie sich vom reinen Konsum und der Hörigkeit gegenüber Ihrem aktuellen Steuerberaters ein wenig zu lösen wagen: Genossenschaften, Stiftungen und Wirtschaftsvereine ermöglichen Ihnen, teilweise komplett steuerfrei oder zumindest extrem steuergünstig mit Immobilien, Unternehmensbeteiligungen und anderen Investitionen Vermögen aufzubauen und dieses zugleich vor fremdem Zugriff nachhaltig und sicher zu schützen. Somit können Sie entspannt in die Zukunft schauen.',
   },
   {
     id:4,
     title: 'Spare Steuern Akademie ',
-    description: 'Denn wir haben in 9 Jahren unternehmerischer Praxis ein Experten-Netzwerk geschaffen, in dem wir ' +
-      'die weltweit führenden Steuerberater, Anwälte, Firmengründungsexperten und erfahrensten Berater für ' +
-      'Genossenschaften, Stiftungen und Wirtschaftsvereine zusammengebracht haben, um Sie mit unserer ganzheitlichen ' +
-      'Wirtschafts- und Unternehmensberatung auf dem Weg zu Ihrer maximalen wirtschaftlichen Freiheit begleiten ' +
-      'zu können. ',
+    description: 'Seit 2015 haben wir die führende Akademie zur legalen Steueroptimierung im In- und Ausland aufgebaut. Mehr als 170.000 € sind in die Konzeption, die zugrunde liegenden Steueranalysen, die Kurse, Videoproduktion, das ansprechende Design und die Entwicklung geflossen, damit Sie nirgendwo sonst suchen müssen, wenn Sie Antworten auf Ihre Fragen brauchen und sich als Unternehmer selbst dieses extrem wichtige Experten-Wissen aneignen wollen. Denn nicht Ihr Steuerberater, sondern Sie selbst sind für Ihr Unternehmen und Ihre finanzielle Intelligenz verantwortlich.',
   },
   {
     id:5,
     title: 'Kostenfreie Erstberatung ',
-    description: 'Sie brauchen aufgrund Ihrer hohen Steuerbelastung eine qualifizierte Zweitmeinung zu Ihrem ' +
-      'Steuerberater oder Rechtsanwalt?' +
-      ' <br/><br/>' +
-      'Dann freuen wir uns auf die Zusammenarbeit.' +
-      '<br/><br/>' +
-      'Denn wir haben in 9 Jahren unternehmerischer Praxis ein Experten-Netzwerk geschaffen, in dem wir die weltweit ' +
-      'führenden Steuerberater, Anwälte, Firmengründungsexperten und erfahrensten Berater für Genossenschaften, ' +
-      'Stiftungen und Wirtschaftsvereine zusammengebracht haben, um Sie mit unserer ganzheitlichen Wirtschafts- ' +
-      'und Unternehmensberatung auf dem Weg zu Ihrer maximalen wirtschaftlichen Freiheit begleiten zu können. ',
+    description: 'Marc Schippke hat in den letzten 9 Jahren im Rahmen seiner Unternehmensgründungen weltweit durch falsche Beratung und falsche Konstruktionen sowie eingekaufte Steuer-Analysen mehr als 288.000 € Lehrgeld bezahlt. Davon profitieren Sie. Denn wofür er viele Jahre gebraucht und viel Geld bezahlt hat, können Sie im Rahmen unserer Wirtschaftsberatung in 4-6 Wochen bereits erfolgreich kalkuliert, aufgesetzt und umgesetzt haben, um künftig vollkommen legal nur noch 15 bis 0 % Steuern zahlen zu dürfen. Wir glauben an den Wert, Ihnen gegenüber in Vorleistung zu treten. Daher erhalten Sie nach einem kurzen Qualifikationsgespräch mit unserem Team eine persönliche und individuelle Erstberatung mit Marc persönlich. Vereinbaren Sie ganz einfach hier Ihren Termin.',
   },
 
 ];

@@ -185,6 +185,7 @@ button {
 .main {
   height: 924px;
   display: flex;
+  position: relative;
 }
 .main .video-wrap {
   position: absolute;
@@ -573,7 +574,7 @@ button {
   font-weight: 400;
 }
 .slogans .slogan-3 .left-block .sign {
-  margin: 40px 0 0 155px;
+  margin: 0 0 0 60px;
 }
 .partners {
   padding: 150px 0 120px 0;
@@ -1092,6 +1093,44 @@ button {
   text-decoration: none;
   line-height: 32px;
 }
+.video-overlay {
+  background-color: #000;
+  opacity: 0.4;
+}
+.hero__decoration__container {
+  height: 48px;
+  overflow: hidden;
+  display: flex;
+}
+.hero__decoration__blank {
+  flex: 1;
+  background: #fff;
+}
+.hero__decoration__angle {
+  background: #fff;
+  -webkit-transform: skewX(48deg);
+  transform: skewX(48deg);
+  width: 78px;
+  height: 90px;
+  margin-left: -5px;
+}
+.hero__decoration__angle + .hero__decoration__angle {
+  -webkit-transform: skewX(-48deg);
+  transform: skewX(-48deg);
+  margin-left: 0;
+  margin-right: -5px;
+}
+.hero__decoration__container {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.photo-dirk_two {
+  display: none;
+}
+.photo-dirk_three {
+  display: none;
+}
 @media screen and (max-width: 1919px) {
   .container {
     max-width: 1024px;
@@ -1392,11 +1431,10 @@ button {
     line-height: 23px;
   }
   .slogans .slogan-3 .left-block .sign {
-    margin: 30px 0 0 64px;
+    margin: 0 0 0 40px;
   }
   .slogans .slogan-3 .left-block .sign img {
-    width: 168px;
-    height: 39px;
+    width: 300px;
   }
   .partners {
     padding: 80px 0 64px 0;
@@ -1694,6 +1732,12 @@ button {
     font-size: 13px;
     line-height: 17px;
   }
+  .hero__decoration__container {
+    height: 26px;
+  }
+  .hero__decoration__angle {
+    height: 48px;
+  }
 }
 @media screen and (max-width: 1023px) {
   .container {
@@ -1933,9 +1977,12 @@ button {
     max-width: 667px;
   }
   .main {
+    background-image: url(../assets/images/headerBG.jpg);
+    background-size: cover;
     height: 321px;
   }
   .main .video-wrap {
+    display: none;
     height: 321px;
   }
   .main .video-wrap video {
@@ -2433,6 +2480,12 @@ button {
     font-size: 12px;
     line-height: 15px;
   }
+  .hero__decoration__container {
+    height: 17px;
+  }
+  .hero__decoration__angle {
+    height: 33px;
+  }
 }
 @media screen and (max-width: 666px) {
   .container {
@@ -2520,7 +2573,7 @@ button {
     line-height: 17px;
   }
   .main .header-content .trustpilot {
-    margin-top: 43px;
+    margin-top: 7px;
   }
   .main .header-content .trustpilot img {
     width: 64px;
@@ -3076,5 +3129,11 @@ button {
   }
   .footer .container .footer-menu {
     display: none;
+  }
+  .hero__decoration__container {
+    height: 26px;
+  }
+  .hero__decoration__angle {
+    height: 48px;
   }
 }

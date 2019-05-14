@@ -5,7 +5,12 @@ $(document).ready(function(){
     items: 1,
     animateOut: 'slideOutLeft',
     animateIn: 'fadeInRight',
-    smartSpeed: 1500,
+    smartSpeed: 500,
+  });
+  $('.quotes-slider .owl-carousel').on('changed.owl.carousel', function(event) {
+    $('.quotes .photo-dirk').hide();
+    $('.quotes .photo-dirk').eq(event.page.index).fadeIn(600);
+
   });
   $('.advantages-item').on('click', (e)=>{
 
